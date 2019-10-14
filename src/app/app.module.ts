@@ -6,13 +6,22 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { DashboardComponent, PageNotFoundComponent } from './pages';
+import { FooterBarComponent, TopBarComponent } from './desktop';
+import { AboutComponent, ListRefuelingsComponent } from './pages';
+import { EditRefuelingsComponent } from './core/edit-refuelings/edit-refuelings.component';
+import { fromEventPattern } from 'rxjs';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FooterBarComponent,
+    TopBarComponent,
+    AboutComponent,
+    ListRefuelingsComponent,
+    EditRefuelingsComponent
   ],
   imports: [
     BrowserModule,

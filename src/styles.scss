@@ -1,4 +1,229 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@charset "UTF-8";
+
+body { 
+    font-family: myFontFamily;
+    font-size: myFontSize;
+    font-weight: normal;
+    color: myBackgroundColor;
+    -webkit-font-smoothing: antialiased;
+
+    padding-left: 2px;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin: px;
+
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.myButtonStyle {
+  font-size: 1em;
+  color: myBlack;
+  background: myLightgrey;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.content-section {
+    display: block;
+    border-bottom: solid 1px #dde3e6;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #f5f7f8;
+    min-height: calc(100vh - 150px);
+   // box-sizing: border-box;
+  }
+  
+.content-section.introduction {
+    background-image: linear-gradient(to left, #dde0e0, #b7e1fa);
+    color: #ffffff;
+    min-height: 10px;
+  }
+
+  
+.content-section.main {
+    min-height: 100px;
+  }
+
+  .content-section.main div {
+    padding: 5px;
+  }
+
+
+
+.content-section.introduction a {
+    color: #ffffff;
+    font-weight: 700;
+  }
+  
+  .content-section:first-of-type > div > span {
+    line-height: 1em;
+  }
+  
+  
+  .main-container {
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+  }
+
+
+.content-container {
+    display: flex;
+    align-items: stretch; 
+    flex-direction: column;
+    width: 100%;
+    min-width: 300px;
+    max-width: 80%;
+    overflow: auto;
+    margin-left: 15px; 
+    padding-top: 10px;
+}
+
+
+// From Test-view
+.example-container {
+    display: flex;
+    align-items: stretch; 
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 80%;
+    max-height: 50%;
+    overflow: auto;
+    margin: 5px;
+    margin-top: 2px;
+    margin-bottom: px;
+}
+
+
+
+h1 {
+  font-size: 1.3em;
+  color: #999;
+  margin-bottom: 0;
+  padding-left: 2px;
+}
+h2 {
+  font-size: 1.2em;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 2px;
+}
+h3 {
+  font-size: 1.1em;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 2px;
+}
+
+
+
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}
+
+.table-header-row {
+  background-color: myBackgroundColor;
+  color: myFont-color;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.table-row {
+  background-color: myBackgroundColor;
+  color: myLightgrey;
+  font-size: 1em;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+
+
+/**
+ * Global colors, styles & font definition
+ */
+
+
+$myFontFamily: 'Roboto', "Trebuchet MS", Arial, Helvetica, sans-serif;
+$myFontSize: 0.35em;
+$myBorderRadius: 6px;
+$myDisabledOpacity: 0.35;
+$myBackgroundColor: #f5f5f5;
+
+//Header
+$myHeaderBorderWidth: 1px;
+$myHeaderBorderColor: #aed0ea;
+$myHeaderColor: #04436d;
+$myHeaderTextColor: white;
+$myHeaderFontWeight: bold;
+$myHeaderIconTextColor: #222222;
+
+//Content
+$myContentBorderWidth: 1px;
+$myContentBorderColor: #dddddd;
+$myContentColor: #f2f5f7;
+$myContentTextColor: #362b36;
+
+//Forms
+$myFormInputColor: #ffffff;
+$myFormInputTextColor: #222222;
+$myFormInvalidInputBorderColor: #cd0a0a;
+$myFormInputGroupTextColor: #2779aa;
+
+$myBlue: #009fe3;
+$myDarkblue: #00303e;
+$myBlue-active: #80cff1; //rgb 128/207/241
+$myBlue-light: #80cff1; //rgb 128/207/241
+$myDarkgrey: #565656;
+$myGrey: #a3a3a3;
+$myLightgrey: lightgray;
+$myDisabled: #cccccc;
+$myLightestgrey: #e5e5e5;
+$myWhite: white;
+$myBlack: black;
+$myFont-color: #757575;
+$myError-red: #ff0000;
+$myTooltip-background:  #dbdbdb;
+ 
