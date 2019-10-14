@@ -2,8 +2,26 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+// import { Configuration } from './configuration.common';
+
 export const environment = {
-  production: false
+    production: false,
+};
+
+export const appConfiguration = {
+    /**
+     * Link to fuelings data
+     *
+     */
+
+    fuelingsUrl: './../assets/json/accountData.json',
+
+    /**
+     *  App settings
+     *
+     */
+    buildVersionInfo: '0.1.0',
+    topBarLogo: './assets/img/svg/like.svg',
 };
 
 /*

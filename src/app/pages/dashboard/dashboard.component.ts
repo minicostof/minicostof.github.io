@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+    selector: 'app-dashboard',
+    styleUrls: ['./dashboard.component.scss'],
+    templateUrl: './dashboard.component.html',
 })
 export class DashboardComponent implements OnInit {
+    public title: string = 'kmAccouting';
 
-  constructor() { }
+    constructor() {}
 
-  ngOnInit() {
-  }
-
+    public ngOnInit(): void {}
 }
