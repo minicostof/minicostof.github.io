@@ -1,16 +1,22 @@
-[
-    {
-        "date": "19-09-2019", 
+[{
+        "date": "19-09-2019",
         "km": 655,
         "litre": 41.45,
         "price": 480,
         "comment": "Ordinary fill up"
     },
     {
-        "date": "27-09-2019", 
+        "date": "27-09-2019",
         "km": 635,
         "litre": 40.45,
         "price": 455,
+        "comment": "More gaz ...."
+    },
+    {
+        "date": "29-02-2020",
+        "km": 615,
+        "litre": 40.45,
+        "price": 445,
         "comment": "More gaz ...."
     }
 ]

@@ -1,0 +1,27 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "terminal.integrated.shellArgs.windows": [
+        "/K BGSETUP_NONE.cmd"
+    ],
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "typescriptHero.imports.organizeOnSave": true,
+    "prettier.printWidth": 140,
+    "prettier.tabWidth": 4,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "prettier.jsxBracketSameLine": true,
+    "prettier.semi": true,
+    "prettier.arrowParens": "always",
+    "files.exclude": {
+        "**/coverage": true,
+        "**/dist": true,
+        "**/root": true,
+        "**/node_modules": true,
+        "**/docker": true,
+        "**/*.map": true,
+        "**/.js": true,
+        "**/.gitignore": true
+    },
+    "typescript.tsdk": "node_modules\\typescript\\lib"
+}
